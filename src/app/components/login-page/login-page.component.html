@@ -1,0 +1,37 @@
+<div class="d-flex justify-content-center    ">
+<div class="mt-5">
+
+
+    <mat-card-header> 
+        <mat-card-title>
+            <div class="d-flex justify-content-center ml-5" >
+            <div class="d-flex justify-content-center ml-5" >
+            <h4 class="ml-5">Login</h4>
+        </div>
+    </div>
+        </mat-card-title>
+        </mat-card-header>
+        <div class="d-flex justify-content-center">
+    <img src="assets/images/person.jpeg" alt="logo" class="d-flex justify-content-center">
+    </div>
+    <mat-card class="bg-accent">
+        
+            <mat-form-field class="w-100">
+                <input matInput placeholder="Username" [(ngModel)]="username">
+            </mat-form-field>
+            <div>
+                <mat-form-field class="w-100">
+                    <input matInput placeholder="Password" [(ngModel)]="password" type="password">
+                </mat-form-field>
+                <mat-form-field class="w-100">
+                    <input matInput placeholder="Confirm Password" [(ngModel)]="confirmPassword" type="password">
+                </mat-form-field>
+                <div class="d-flex justify-content-center mt-3">
+                    <button mat-raised-button color="accent" (click)="login()" class ="mr-3">Login</button>
+                    <button mat-raised-button color="accent" (click)="register()">Register</button>
+                    </div>
+            </div>
+    </mat-card>
+    </div>
+    
+</div>

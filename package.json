@@ -6,10 +6,13 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js",
+    "aot":"node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng serve"
   },
   "private": true,
   "dependencies": {
+    "@angular-architects/module-federation": "^14.3.0",
     "@angular/animations": "^14.2.0",
     "@angular/common": "^14.2.0",
     "@angular/compiler": "^14.2.0",
@@ -20,7 +23,9 @@
     "@angular/router": "^14.2.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "@angular/material": "^14.2.0",
+    "bootstrap": "4.1.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.13",
@@ -33,6 +38,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "ng-packagr": "^14.2.0",
+    "ngx-build-plus": "^14.0.0",
     "typescript": "~4.7.2"
   }
 }
